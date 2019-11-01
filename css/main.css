@@ -1,11 +1,50 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=cyrillic-ext');
+
 body{
   font-family: 'Fira Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E5E5E5;
 }
+nav{
+  position: fixed;
+  left: calc((100vw - 600px) / 2);
+  transform: translateX(-110%);
+  padding: 24px 32px 0px 0px;
+
+}
+nav ul li{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.nav__icon{
+  width: 28px;
+  height: 28px;
+  background: #000;
+}
+.nav__icon--home{
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+nav ul li:hover{
+  color: #0038FF;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+nav ul li:hover .nav__icon--home{
+  background: #0038FF;
+}
+.nav__icon--bell{
+  mask: url(../img/bell-icn.svg);
+  -webkit-mask: url(../img/bell-icn.svg);
+}
+nav ul li:hover .nav__icon--bell{
+  background: #0038FF;
+}
+/* MAIN */
+
 main{
   width: 600px;
   min-height: 100vh;
