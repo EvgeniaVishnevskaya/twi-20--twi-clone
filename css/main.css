@@ -8,64 +8,75 @@ body{
 }
 main{
   width: 600px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   border-left: 1px solid rgba(0, 0, 0, 0.25);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 10vh;
 }
-.main--header{
+.main__header{
  display: flex;
  justify-content: space-between;
  padding: 16px;
  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
-.main--header h2{
+.main__header h2{
   font-weight: bold;
   font-size: 20px;
 }
 .story{
   padding: 24px 32px 16px 24px;
   display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
-.story--user--ava{
+.story__user__ava{
   width: 56px;
   height: 56px;
   margin-right: 16px;
 }
-.story--body--header{
+.story__body__header{
   display: flex;
   align-items: center;
 }
-.story--body--header *{
+.story__body__header *{
   margin-right: 16px;
 }
-.story--body--header h3{
+.story__body__header h3{
   font-weight: bold;
   font-size: 20px;
 }
-.story--body--header a,
-.story--body--header span {
+.story__body__header a,
+.story__body__header span {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
-.story--body--header a{
+.story__body__header a{
   text-decoration: none;
 }
-.story--body p{
+.story__body p{
   font-size: 16px;
   line-height: 24px;
   padding-top: 8px;
   padding-bottom: 17px;
 }
-.story--body--actions{
+.story__body__actions {
   display: flex;
+  justify-content: space-between;
+  margin-right: 140px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.35);
+  margin-top: 16px;
 }
-.story--body--actions li{
-  margin-right: 66px;
+.story__body__actions li {
+  position: relative;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.35);
 }
-.story--body--actions li *{
-  margin-right: 8px;
+.story__body__actions li:hover{
+  cursor: pointer;
+  filter: brightness(0.05);
+}
+.story__body__actions__item {
+  position: absolute;
+  left: 28px;
 }
