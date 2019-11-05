@@ -17,13 +17,19 @@ nav{
 nav ul li{
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 32px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 176px;
+  height: 60px;
 }
 .nav__icon{
   width: 28px;
   height: 28px;
   background: #000;
+
 }
 .nav__icon--home{
   mask: url(../img/home-icn.svg);
@@ -32,6 +38,8 @@ nav ul li{
 nav ul li:hover{
   color: #0038FF;
   background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+
 }
 nav ul li:hover .nav__icon--home{
   background: #0038FF;
@@ -42,6 +50,99 @@ nav ul li:hover .nav__icon--home{
 }
 nav ul li:hover .nav__icon--bell{
   background: #0038FF;
+}
+.nav__icon--chat{
+  mask: url(../img/chat-icn.svg);
+  -webkit-mask: url(../img/chat-icn.svg);
+}
+nav ul li:hover .nav__icon--chat{
+  background: #0038FF;
+}
+.nav__icon--bookmark{
+  mask: url(../img/bookmark-icn.svg);
+  -webkit-mask: url(../img/bookmark-icn.svg);
+}
+nav ul li:hover .nav__icon--bookmark{
+  background: #0038FF;
+}
+nav a{
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+nav div{
+  background-color: #0038FF;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  width: 216px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ASIDE*/
+
+aside {
+  position: fixed;
+  right: calc((100vw - 600px) / 2);
+  transform: translateX(110%);
+  padding: 15px 32px 0px 0px;
+  background-color: rgba(25, 25, 25, 0.05);
+  border-radius: 12px;
+  width: 320px;
+  height: 304px;
+  margin-top: 15px;
+
+}
+aside ul li:first-child{
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+
+}
+aside ul li{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  height: 56px;
+}
+aside ul li:last-child{
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  border-bottom: 1px  rgba(0, 0, 0, 0.25);
+  color: #0038FF
+  height: 40px;
+}
+.user{
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+
+
+}
+.user img{
+  width: 40px;
+  height: 40px;
+}
+.user__info{
+  margin-left: 8px;
+}
+.user__info__name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.user__info__nick{
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
 }
 /* MAIN */
 
