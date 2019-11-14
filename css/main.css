@@ -292,3 +292,13 @@ aside ul li:last-child {
     display: none;
   }
 }
+@media (max-width: 320px){
+
+  body{
+    display: flex;
+  }
+  aside{
+    display: none;
+  }
+
+}
